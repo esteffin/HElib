@@ -167,6 +167,8 @@ if (ENABLE_THREADS AND Threads_NOTFOUND)
   message(FATAL_ERROR "Cannot find pthreads (ENABLE_THREADS is ON).")
 endif ()
 
+message(FATAL_ERROR "On purpose configuration problem")
+
 # NOTE: Consider reconfiguring everything when PACKAGE_BUILD changes value.
 # Options from the previous value will remain otherwise.
 # Set up extra properties depending on the value of PACKAGE_BUILD
